@@ -7,4 +7,5 @@ public class AdvancedCalculatorPage extends SimpleCalculatorPage {
     @AndroidFindBy(id="const_pi")
     public WebElement pi;
 
+
 }

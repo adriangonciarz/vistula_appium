@@ -1,5 +1,6 @@
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class SimpleCalculatorPage {
     @AndroidFindBy(id = "digit_9")

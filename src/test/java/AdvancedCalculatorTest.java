@@ -33,8 +33,7 @@ public class AdvancedCalculatorTest extends BaseDriver {
     }
 
     public void convertTextToTaps(String string){
-        string.replaceAll("\\s+","");
-        String[] list = string.split("");
+        String[] list = string.replaceAll("\\s+","").split("");
         for (String s : list){
             driver.findElement(By.xpath("//*[@text='"+s+"']")).click();
         }
