@@ -50,4 +50,21 @@ public class SimpleCalculatorTest extends BaseDriver{
 
         assertEquals("68",simpleCalculatorPage.formula.getText());
     }
+
+    @Test
+    public void testFour(){
+        SimplePage simple = new SimplePage();
+        PageFactory.initElements(new AppiumFieldDecorator(driver, 5, TimeUnit.SECONDS), simple);
+
+        simple.number1.click();
+        simple.plus.click();
+        simple.number2.click();
+        simple.times.click();
+        simple.number9.click();
+        simple.equals.click();
+
+        assertEquals("19", simple.top.getText());
+        assertEquals("", simple.bottom.getText());
+
+    }
 }
